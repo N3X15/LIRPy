@@ -1,8 +1,8 @@
 from typing import Callable, List, Tuple
 from lirpy.rect import Rect
 
-
-class Mask:
+__all__=['Mask2D']
+class Mask2D:
     def __init__(self, height: int, width: int) -> None:
         self.width: int = width
         self.height: int = height

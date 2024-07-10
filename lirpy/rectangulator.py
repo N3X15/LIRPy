@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from lirpy.mask import Mask
+from lirpy.mask2d import Mask2D
 from lirpy.rect import Rect
 
 
@@ -25,8 +25,8 @@ class _SzRect:
 
 
 class Rectangulator:
-    def __init__(self, m: Mask) -> None:
-        self.mask: Mask = m
+    def __init__(self, m: Mask2D) -> None:
+        self.mask: Mask2D = m
         self.found: List[Rect] = []
 
     def findAll(self, verbose: bool = False) -> List[Rect]:
